@@ -2,6 +2,11 @@
     <div class="task">
         <div class="actions">
             <h3 @click="toggleDetail()">{{task.title}}</h3>
+            <div>
+                <span class="material-symbols-outlined">Delete</span>
+                <span class="material-symbols-outlined">edit</span>
+                <span class="material-symbols-outlined">Done</span>
+            </div>
         </div>
         <div class="details" v-if="showDetails">
             <p>{{task.details}}</p>
@@ -42,5 +47,14 @@ export default {
     }
     .actions{
         padding: 15px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .material-symbols-outlined{
+        font-size: 25px;
+        margin-left: 10px;
+        color:gray;
+        cursor: pointer;
     }
 </style>
