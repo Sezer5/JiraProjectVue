@@ -4,8 +4,8 @@
             <h3 @click="toggleDetail()">{{task.title}}</h3>
             <div>
                 <span @click="deleteTask()" class="material-symbols-outlined">Delete</span>
-                <span class="material-symbols-outlined">edit</span>
-                <span class="material-symbols-outlined">Done</span>
+                <span  class="material-symbols-outlined">edit</span>
+                <span @click="toggleComplete()" class="material-symbols-outlined">Done</span>
             </div>
         </div>
         <div class="details" v-if="showDetails">
@@ -17,7 +17,7 @@
 <script>
 export default {
     props:['task'],
-    emits:['delete'],
+    emits:['delete','complete'],
     data(){
         return{
             showDetails:false,
@@ -30,6 +30,12 @@ export default {
         },
         deleteTask(){
             fetch(this.uri,{method:'DELETE'}).then(()=>this.$emit('delete',this.task.id)).catch(err=>console.log(err));
+        },
+        toggleComplete(){
+            fetch(this.uri,{method:'PUT',
+                headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({title:this.task.title,details:this.task.details,complete:!this.task.complete})
+            }).then(this.$emit('complete',this.task.id)).catch(err=>console.log(err));
         }
     }
 }

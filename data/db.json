@@ -3,32 +3,26 @@
     {
       "title": "Backend İşlemleri",
       "details": "Backend işlemlerinin yapılması ve php işlemlerinin yapılması",
-      "complete": true,
+      "complete": false,
       "id": "1"
     },
     {
-            "title":"FrontEnd İşlemleri",
-            "details":"Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-            "complete":false,
-            "id":"2"
+      "title": "FrontEnd İşlemleri",
+      "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
+      "complete": false,
+      "id": "2"
     },
     {
-            "title":"FrontEnd İşlemleri 3",
-            "details":"Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-            "complete":false,
-            "id":"3"
+      "title": "FrontEnd İşlemleri 3",
+      "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
+      "complete": false,
+      "id": "3"
     },
     {
-            "title":"FrontEnd İşlemleri 4",
-            "details":"Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-            "complete":false,
-            "id":"4"
-    },
-    {
-            "title":"FrontEnd İşlemleri 5",
-            "details":"Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-            "complete":false,
-            "id":"5"
+      "title": "FrontEnd İşlemleri 4",
+      "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
+      "complete": false,
+      "id": "4"
     }
   ]
 }
