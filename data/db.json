@@ -3,7 +3,7 @@
     {
       "title": "Backend İşlemleri",
       "details": "Backend işlemlerinin yapılması ve php işlemlerinin yapılması",
-      "complete": false,
+      "complete": true,
       "id": "1"
     },
     {
@@ -21,7 +21,7 @@
     {
       "title": "FrontEnd İşlemleri 4",
       "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-      "complete": false,
+      "complete": true,
       "id": "4"
     }
   ]

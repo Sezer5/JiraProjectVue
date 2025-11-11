@@ -1,11 +1,11 @@
 <template>
-    <div class="task">
+    <div class="task" :class="{complete:task.complete}">
         <div class="actions">
             <h3 @click="toggleDetail()">{{task.title}}</h3>
             <div>
                 <span @click="deleteTask()" class="material-symbols-outlined">Delete</span>
                 <span  class="material-symbols-outlined">edit</span>
-                <span @click="toggleComplete()" class="material-symbols-outlined">Done</span>
+                <span @click="toggleComplete()" class="material-symbols-outlined tick">Done</span>
             </div>
         </div>
         <div class="details" v-if="showDetails">
@@ -67,5 +67,11 @@ export default {
         margin-left: 10px;
         color:gray;
         cursor: pointer;
+    }
+    .task.complete{
+        border-left:8px solid green;
+    }
+    .task.complete .tick{
+        color:darkcyan;
     }
 </style>
