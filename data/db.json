@@ -9,7 +9,7 @@
     {
       "title": "FrontEnd İşlemleri",
       "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-      "complete": false,
+      "complete": true,
       "id": "2"
     },
     {
@@ -21,7 +21,7 @@
     {
       "title": "FrontEnd İşlemleri 4",
       "details": "Frontend işlemlerinin yapılması ve vue tarafından geliştirilmesi",
-      "complete": true,
+      "complete": false,
       "id": "4"
     }
   ]
