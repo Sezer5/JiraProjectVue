@@ -25,15 +25,6 @@
       "id": "4"
     },
     {
-      "id": "64b3",
-      "task": {
-        "id": 42673,
-        "title": "sezer",
-        "details": "Deneme dersler i vue için",
-        "complete": false
-      }
-    },
-    {
       "id": 91615,
       "title": "Deneme2",
       "details": "Denemeler bu kısımda yapılmaktadır",
