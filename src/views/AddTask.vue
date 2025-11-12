@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent="handleSubmit">
             <label>Başlık</label>
             <input type="text" v-model="title" required>
             <label>İş Detayı</label>
@@ -13,8 +13,28 @@ export default {
     data(){
         return{
             title:'',
-            details:''
+            details:'',
+            uri:'http://localhost:3000/tasks'
         }
+    },
+    methods:{
+        handleSubmit(){
+            // let task={
+            //     id:Math.floor(Math.random()*100000),
+            //     title:this.title,
+            //     details:this.details,
+            //     complete:false
+            // }
+            fetch(this.uri,{method:'POST',
+                headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({id:Math.floor(Math.random()*100000),
+                title:this.title,
+                details:this.details,
+                complete:false})
+            }).then(()=>{
+                this.$router.push('/')
+            }).catch(err=>console.log(err));
+            }
     }
 }
 </script>
