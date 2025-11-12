@@ -4,7 +4,9 @@
             <h3 @click="toggleDetail()">{{task.title}}</h3>
             <div>
                 <span @click="deleteTask()" class="material-symbols-outlined">Delete</span>
-                <span  class="material-symbols-outlined">edit</span>
+                <router-link :to="{name:'editTask',params:{id:task.id}}">
+                    <span  class="material-symbols-outlined">edit</span>
+                </router-link>
                 <span @click="toggleComplete()" class="material-symbols-outlined tick">Done</span>
             </div>
         </div>
